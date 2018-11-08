@@ -22,7 +22,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #09f5e9;
+  background-color: #1e7773;
 }
 
 body header {
@@ -36,12 +36,13 @@ body header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  margin: 0;
-  padding: 0;
   background-color: #5454fa;
   z-index: 1;
 }
@@ -53,7 +54,6 @@ body header h1 {
 
 body form {
   width: 80%;
-  height: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,25 +61,44 @@ body form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 3;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 2;
   position: absolute;
-  top: 20%;
+  margin-top: 25%;
   background-color: crimson;
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
 }
 
-body form option, body form select {
+body form #first {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body form #first option, body form #first select, body form #first #second {
   font-size: 3vw;
 }
 
-body form input {
+body form #first input {
   font-size: 2vw;
   text-transform: uppercase;
+  margin: 3% 0;
+}
+
+body form #first #table, body form #first #second {
+  margin: 3% 0;
 }
 /*# sourceMappingURL=style.css.map */

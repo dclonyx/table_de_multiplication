@@ -1,9 +1,14 @@
 <?php
 $table = $_GET["table"];
-
-for ($x = 0; $x <= 30; $x++) {
-    $total = $table * $x;
-    echo "$total";
+if (isset($_GET["table"])){
+    for ($x = 0; $x <= 30; $x++) {
+        $total = $table * $x;
+        print "$table X $x = $total<br>";
+    }   
 } 
+
+
+
+
 
 ?>
