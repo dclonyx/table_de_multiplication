@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+@import "reset";
 
 @mixin display{
     display: flex;
@@ -19,45 +16,63 @@ body{
     height: 100vh;
     text-align: center;
     @include display;
-    background-color: rgb(30, 119, 115);
+    background-color: rgb(164, 165, 245);
     header{
         width: 100%;
-        height: 20%;
+        height: 15%;
         text-align: center;
         @include display;
         justify-content: center;
+        background-color: rgb(30, 15, 248);
         position: absolute;
-        background-color: rgb(84, 84, 250);
-        z-index: 1;
         h1{
             text-transform: uppercase;
             font-size: 6.5vw;
+            color: white;
         }
     }
     form{
         width: 80%;
+        height: auto;
         @include display;
         justify-content: space-around;
-        z-index: 2;
-        position: absolute;
-        margin-top: 25%;
-        background-color: crimson;
+        background-color: rgb(151, 146, 146);
         box-shadow: 5px 5px 5px black;
+        border-radius: 15px;
+        position: relative;
+        top : 12%;
         #first{
-            height: 50%;
+            width: auto;
             @include display;
+            margin: 2% 0;
             option, select, #second{
-                font-size: 3vw;
+            font-size: 3.5vw;
+            } 
+            #table{
+                margin: 5% 0;
+                border-radius: 15px;
+                width: 120%;
+                text-align: center;
+                background-color: whitesmoke;
             }
-            input{
-                font-size: 2vw;
+            #voir{
+                border-radius: 15px;
                 text-transform: uppercase;
-                margin: 3% 0;
-            }
-            #table, #second{
-                margin: 3% 0;
-            }
+                margin: 5% 0;
+                width: 60%;
+                height: auto;
+                background-color: whitesmoke;
+                box-shadow: 2px 2px 2px black;
+                font-size: 3.5vw;
+                }
+        }
+        #second{
+            margin: 3% 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
         }
     }
 }
+
 

@@ -26,13 +26,19 @@
                 <option value="10">Table de 10</option>
             </select>
             <input id="voir" type="submit" value="voir"/>
-        <div>
+        </div>
         <div id="second">
-            <?php
-                include "traitement.php";
-            ?>
+            <div>
+                <?php
+                    include "traitement.php";
+                ?>
+            </div>
+            <div>
+                <?php
+                    include "traitement2.php";
+                ?>
+            </div>
         </div>
     </form>
-   <div></div>
     <script src="./script.js"></script>
 </body>
