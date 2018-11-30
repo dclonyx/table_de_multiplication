@@ -22,7 +22,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #a4a5f5;
+  background-color: #97cafa;
+  background-image: url(../img/cool3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body h2 {
@@ -47,7 +50,10 @@ body header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #1e0ff8;
+  background-color: #3e30fd;
+  background-image: url(../img/cool2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
 }
 
@@ -72,7 +78,10 @@ body form {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #979292;
+  background-color: lightgray;
+  background-image: url(../img/cool4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
   border-radius: 15px;
@@ -105,6 +114,10 @@ body form #first #table {
   width: 100%;
   text-align: center;
   background-color: whitesmoke;
+}
+
+body form #first select {
+  outline-style: none;
 }
 
 body form #result {

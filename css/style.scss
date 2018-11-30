@@ -16,7 +16,10 @@ body{
     height: 100vh;
     text-align: center;
     @include display;
-    background-color: rgb(164, 165, 245);
+    background-color: rgb(151, 202, 250);
+    background-image: url(../img/cool3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     h2{
         font-size: 4vw;
         font-weight: normal;
@@ -27,7 +30,10 @@ body{
         text-align: center;
         @include display;
         justify-content: center;
-        background-color: rgb(30, 15, 248);
+        background-color: rgb(62, 48, 253);
+        background-image: url(../img/cool2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
         h1{
             text-transform: uppercase;
@@ -40,7 +46,10 @@ body{
         height: auto;
         @include display;
         justify-content: space-around;
-        background-color: rgb(151, 146, 146);
+        background-color: rgb(211, 211, 211);
+        background-image: url(../img/cool4.png);
+         background-repeat: no-repeat;
+        background-size: cover;
         box-shadow: 5px 5px 5px black;
         border-radius: 15px;
         position: relative;
@@ -59,6 +68,9 @@ body{
                 text-align: center;
                 background-color: whitesmoke;
             }
+            select{
+               outline-style: none;
+                }
         }
         #result{
             margin: 1% 0;
